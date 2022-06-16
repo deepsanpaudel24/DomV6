@@ -9,7 +9,7 @@ const {
   fetchMarvelHeroChractersError,
 } = actions;
 
-const getAllHeroCharacters = () => {
+export const getAllHeroCharacters = () => {
   return async (dispatch: Dispatch<Action>) => {
     try {
       dispatch(fetchMarvelHeroCharatersBegin());

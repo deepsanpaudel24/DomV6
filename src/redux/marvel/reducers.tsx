@@ -3,7 +3,7 @@ import MarvelChracter from "../../models/MarvelCharacterModel";
 interface MarvelState {
   loading: boolean;
   error: string | null;
-  heros: MarvelChracter[] | null;
+  heros: MarvelChracter[];
 }
 
 const initialState = {

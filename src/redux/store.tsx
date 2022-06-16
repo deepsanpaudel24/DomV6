@@ -10,11 +10,8 @@ let cmp =
 
 const store = createStore(
   rootReducer,
-  cmp(applyMiddleware(thunk))
+  composeWithDevTools(applyMiddleware(thunk))
 );
 
-export const initialRootState = {
-  ...store.getState(),
-};
 
 export default store;
